@@ -3,11 +3,18 @@ using System.IO;
 using System.Data;
 using System.Web.UI.WebControls;
 
+// ------------------------------------------------------------------------------------------------------------------
+// - rbettinelli - Common Libraries For Conversion and Web Funcitons and such. 
+// ------------------------------------------------------------------------------------------------------------------
+// 06/15/2022 - Basic Stuff. 
+// ------------------------------------------------------------------------------------------------------------------
 namespace WebPortfolio
 {
     public class Com_Lib
     {
-
+        // ---------------------------------------------------------------------------
+        // Date Formats
+        // ---------------------------------------------------------------------------
         public const string EofyFormat = "12/31/";
         public const string Dfmt = "MM/dd/yyyy";
 
@@ -31,7 +38,8 @@ namespace WebPortfolio
                     drp.Items.Add(li);
                     drp.SelectedIndex = 0;
                 }
-            }catch (Exception) { }
+            }
+            catch (Exception) { }
 
         }
 
@@ -100,7 +108,7 @@ namespace WebPortfolio
         public static int FInt(string txt)
         {
             int rt = 0;
-           
+
             txt = CleanString(txt.Trim());
             try
             {
@@ -109,7 +117,7 @@ namespace WebPortfolio
             catch (Exception)
             {
             }
-  
+
             return rt;
         }
 

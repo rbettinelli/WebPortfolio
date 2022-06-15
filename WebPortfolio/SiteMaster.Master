@@ -25,24 +25,64 @@
         <!-- Header -->
         <div class="container-fluid" id="header">
             <div class="row">
-                <div class="col">
-                    <asp:Image ID="Image1" runat="server" />
+                <div class="col-2">
+                    <asp:Image ID="ImgPic" runat="server" Style="height:90px;padding: 10px 10px 10px 10px;" />
                 </div>
-                <div class="col">
-                    <h1 class="text-white">USER NAME</h1>
+                <div class="col-10 text-center">
+                    <h1 class="text-white" style="padding-top:20px;">
+                        <asp:Label ID="LblName" runat="server"></asp:Label></h1>
                 </div>
             </div>
         </div>
 
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <asp:LinkButton ID="Lnk1" runat="server" CssClass="nav-link active" OnClick="LnkX_Click">Home</asp:LinkButton>
+                        </li>
+                        <li class="nav-item">
+                            <asp:LinkButton ID="Lnk2" runat="server" CssClass="nav-link" OnClick="LnkX_Click">Employment</asp:LinkButton>
+                        </li>
+                        <li class="nav-item">
+                            <asp:LinkButton ID="Lnk3" runat="server" CssClass="nav-link" OnClick="LnkX_Click">Education</asp:LinkButton>
+                        </li>
+                        <li class="nav-item">
+                            <asp:LinkButton ID="Lnk4" runat="server" CssClass="nav-link" OnClick="LnkX_Click">My Apps!</asp:LinkButton>
+                        </li>
+                        <li class="nav-item">
+                            <asp:LinkButton ID="Lnk5" runat="server" CssClass="nav-link" OnClick="LnkX_Click">Contact</asp:LinkButton>
+                        </li>
+                    </ul>
+                    <div class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
         <!-- Content -->
-        <div>
+        <div class="container">
             <asp:ContentPlaceHolder ID="Main" runat="server">
             </asp:ContentPlaceHolder>
         </div>
 
         <!-- Footer -->
         <div class="container-fluid" id="footer">
-
+            <div class="row">
+                <div class="col">
+                    <asp:Label ID="LblAddr" runat="server"></asp:Label>
+                </div>
+                <div class="col">
+                    <asp:Label ID="LblContact" runat="server"></asp:Label>
+                </div>
+            </div>
         </div>
     </form>
 </body>

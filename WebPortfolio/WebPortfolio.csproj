@@ -124,6 +124,11 @@
       <DependentUpon>projects.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SiteMaster.Master.cs">
       <DependentUpon>SiteMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -135,6 +140,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="SiteMaster.Master" />
+    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -144,6 +150,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\apppics\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
