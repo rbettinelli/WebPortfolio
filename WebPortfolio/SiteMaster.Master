@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMaster.master.cs" Inherits="WebPortfolio.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio Web</title>
+
+    <!-- Style Sheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link href="css/mainStyle.css" rel="stylesheet" />
+    
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- Extra Java Or Components Placeholder for Child Pages -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!-- Header -->
+        <div class="container-fluid" id="header">
+            <div class="row">
+                <div class="col">
+                    <asp:Image ID="Image1" runat="server" />
+                </div>
+                <div class="col">
+                    <h1 class="text-white">USER NAME</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div>
+            <asp:ContentPlaceHolder ID="Main" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Footer -->
+        <div class="container-fluid" id="footer">
+
+        </div>
+    </form>
+</body>
+</html>
