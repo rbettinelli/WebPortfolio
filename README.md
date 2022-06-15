@@ -4,4 +4,4 @@ In this project you will be designing and submitting to me the first version of 
 
 ---
 
-<a href='https://bettinelli.ca> Goto To Live Bettinelli.ca </a>
+Goto To Live Bettinelli.ca - https://bettinelli.ca
