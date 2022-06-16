@@ -14,6 +14,8 @@
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=62aac434c11373001913fbc3&product=inline-follow-buttons' async='async'></script>
+
     <!-- Extra Java Or Components Placeholder for Child Pages -->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -78,6 +80,12 @@
             <div class="row">
                 <div class="col">
                     <asp:Label ID="LblAddr" runat="server"></asp:Label>
+                </div>
+                <div class="col">
+                    <br />
+                    <!-- ShareThis BEGIN -->
+                    <div class="sharethis-inline-follow-buttons"></div>
+                    <!-- ShareThis END -->
                 </div>
                 <div class="col">
                     <asp:Label ID="LblContact" runat="server"></asp:Label>

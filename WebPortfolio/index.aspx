@@ -15,13 +15,6 @@
                 </div>
             </div>
         </div>
-        <div class="card-footer bg-transparent border-success text-center">
-            <asp:Repeater ID="Repeater1" runat="server">
-                <ItemTemplate>
-                    <a href='<%# DataBinder.Eval(Container.DataItem, "ProfileLink") %>'><%# DataBinder.Eval(Container.DataItem, "ProfileLink") %></a><br />
-                </ItemTemplate>
-            </asp:Repeater>
-        </div>
     </div>
     <br />
 
