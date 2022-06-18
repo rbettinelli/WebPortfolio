@@ -53,7 +53,7 @@ namespace WebPortfolio
                     break;
                 case "Lnk4":
                     Lnk4.CssClass = "nav-link active";
-                    Response.Redirect("Projects.aspx");
+                    Response.Redirect("ProjectMain.aspx");
                     break;
                 case "Lnk5":
                     Lnk5.CssClass = "nav-link active";

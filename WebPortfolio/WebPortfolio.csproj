@@ -72,8 +72,10 @@
     <Content Include="css\mainStyle.css" />
     <Content Include="education.aspx" />
     <Content Include="employment.aspx" />
+    <Content Include="images\apppics\6_main.jpg" />
     <Content Include="images\RB.JPG" />
     <Content Include="index.aspx" />
+    <Content Include="ProjectMain.aspx" />
     <Content Include="projects.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -116,6 +118,13 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ProjectMain.aspx.cs">
+      <DependentUpon>ProjectMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectMain.aspx.designer.cs">
+      <DependentUpon>ProjectMain.aspx</DependentUpon>
+    </Compile>
     <Compile Include="projects.aspx.cs">
       <DependentUpon>projects.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -148,9 +157,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="images\apppics\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

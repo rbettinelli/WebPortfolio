@@ -23,7 +23,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <!-- Header -->
         <div class="container-fluid" id="header">
             <div class="row">
