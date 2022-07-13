@@ -72,10 +72,22 @@
     <Content Include="css\mainStyle.css" />
     <Content Include="education.aspx" />
     <Content Include="employment.aspx" />
+    <Content Include="images\apppics\1_main.jpg" />
+    <Content Include="images\apppics\2_main.jpg" />
+    <Content Include="images\apppics\3_main.jpg" />
+    <Content Include="images\apppics\4_main.jpg" />
+    <Content Include="images\apppics\5\5_main.jpg" />
+    <Content Include="images\apppics\5\Screenshot_20220712-012301_Expo Go.jpg" />
+    <Content Include="images\apppics\5\Screenshot_20220712-012312_Expo Go.jpg" />
+    <Content Include="images\apppics\5\Screenshot_20220712-012317_Expo Go.jpg" />
+    <Content Include="images\apppics\5\Screenshot_20220712-012325_Expo Go.jpg" />
+    <Content Include="images\apppics\5\Screenshot_20220712-012333_Expo Go.jpg" />
+    <Content Include="images\apppics\5_main.jpg" />
     <Content Include="images\apppics\6_main.jpg" />
     <Content Include="images\RB.JPG" />
+    <Content Include="images\V20-JJ.png" />
     <Content Include="index.aspx" />
-    <Content Include="ProjectMain.aspx" />
+    <Content Include="projectMain.aspx" />
     <Content Include="projects.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -118,12 +130,12 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ProjectMain.aspx.cs">
-      <DependentUpon>ProjectMain.aspx</DependentUpon>
+    <Compile Include="projectMain.aspx.cs">
+      <DependentUpon>projectMain.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProjectMain.aspx.designer.cs">
-      <DependentUpon>ProjectMain.aspx</DependentUpon>
+    <Compile Include="projectMain.aspx.designer.cs">
+      <DependentUpon>projectMain.aspx</DependentUpon>
     </Compile>
     <Compile Include="projects.aspx.cs">
       <DependentUpon>projects.aspx</DependentUpon>
@@ -157,7 +169,13 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="images\apppics\1\" />
+    <Folder Include="images\apppics\2\" />
+    <Folder Include="images\apppics\3\" />
+    <Folder Include="images\apppics\4\" />
+    <Folder Include="images\apppics\6\" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

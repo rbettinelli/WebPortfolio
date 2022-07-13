@@ -47,18 +47,11 @@ namespace WebPortfolio
         // ---------------------------------------------------------------------------
         // GetDirCont
         // ---------------------------------------------------------------------------
-        public static FileInfo[] GetDirCont(string fullPath, string extFilter, int pullNo)
+        public static FileInfo[] GetDirCont(string fullPath, string extFilter)
         {
             DirectoryInfo dDir = new DirectoryInfo(fullPath);
             FileInfo[] files = dDir.GetFiles(extFilter);
             Array.Sort(files, new ClsCompareFileInfo());
-            if (pullNo > 0)
-            {
-                var oldFiles = files;
-                files = new FileInfo[5];
-                if (oldFiles != null)
-                    Array.Copy(oldFiles, files, Math.Min(5, oldFiles.Length));
-            }
             return files;
         }
 
@@ -71,13 +64,7 @@ namespace WebPortfolio
             if (!string.IsNullOrEmpty(txt))
             {
                 txt = CleanString(txt.Trim());
-                try
-                {
-                    rt = Convert.ToDouble(txt);
-                }
-                catch (Exception)
-                {
-                }
+                Double.TryParse(txt, out rt); 
             }
             return rt;
         }
@@ -91,13 +78,7 @@ namespace WebPortfolio
             if (!string.IsNullOrEmpty(txt))
             {
                 txt = CleanString(txt.Trim());
-                try
-                {
-                    rt = Convert.ToBoolean(txt);
-                }
-                catch (Exception)
-                {
-                }
+                Boolean.TryParse(txt, out rt);
             }
             return rt;
         }
@@ -110,13 +91,7 @@ namespace WebPortfolio
             int rt = 0;
 
             txt = CleanString(txt.Trim());
-            try
-            {
-                rt = Convert.ToInt32(txt);
-            }
-            catch (Exception)
-            {
-            }
+            Int32.TryParse(txt, out rt);
 
             return rt;
         }
