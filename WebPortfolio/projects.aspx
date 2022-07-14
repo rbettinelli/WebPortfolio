@@ -2,7 +2,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
 
-    <br />
     <asp:Repeater ID="Repeater1" runat="server">
         <ItemTemplate>
             <div class="card">
@@ -56,9 +55,10 @@
                 <div class="col-12 col-md-4 col-lg-3 col-xl-2" style="padding: 5px 5px;">
                     <div class="card mx-auto h-100">
                         <div class="card-body" style="text-align: center;">
-                            <asp:Image ID="Image1" runat="server" ImageUrl='<%# FileSplit(DataBinder.Eval(Container.DataItem, "FullName")) %>' CssClass="img-fluid rounded" />
+                            <asp:Image ID="Image1" runat="server" ImageUrl='<%# DataBinder.Eval(Container.DataItem, "imagefile") %>' CssClass="img-fluid rounded" />
                         </div>
                         <div class="card-footer" style="text-align: center;">
+                            <asp:Label ID="LblData" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "FileDesc") %>' ReadOnly="True" CssClass="text-wrap"></asp:Label>
                         </div>
                     </div>
                 </div>

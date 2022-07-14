@@ -22,6 +22,14 @@ namespace WebPortfolio
                 List<string> v1 = new List<string> {"ID" };
                 List<object> v2 = new List<object> {idx };
                 dbDs = Com_DB.Spx_Uni("spg_GetApps",v1, v2);
+
+                List<string> v11 = new List<string> { "APPID" };
+                List<object> v21 = new List<object> { idx };
+                DataSet dbDs1 = Com_DB.Spx_Uni("spg_GetApps_Files", v11, v21);
+
+                Repeater2.DataSource = dbDs1;
+                Repeater2.DataBind();
+
             } else
             {
                 dbDs = Com_DB.Spx_Uni("spg_GetApps");
@@ -30,16 +38,10 @@ namespace WebPortfolio
             Repeater1.DataSource = dbDs;
             Repeater1.DataBind();
 
-            string p = Server.MapPath("/images/apppics/" + idx);
-            FileInfo[] files = Com_Lib.GetDirCont(p, "*.jpg");
-
-            Repeater2.DataSource = files;
-            Repeater2.DataBind();
-
         }
 
         //protected void Data_ItemDataBound(object sender, RepeaterItemEventArgs e)
-        //{
+        // {
         //    //Bind the inner repeater
         //    if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
         //    {
@@ -54,24 +56,24 @@ namespace WebPortfolio
         //    }
         //}
 
-        public String FileSplit(object strX)
-        {
-            string str = (string)strX;
-            char c = '\\';
-            string[] pth = str.Split(c);
-            string newPth = "";
-            int i = 0;
-            foreach (string item in pth.Reverse()) {
-                if (i < 4)
-                {
-                    newPth = item + "/" + newPth;
-                }
-                i += 1;
-            }
+        //public String FileSplit(object strX)
+        //{
+        //    string str = (string)strX;
+        //    char c = '\\';
+        //    string[] pth = str.Split(c);
+        //    string newPth = "";
+        //    int i = 0;
+        //    foreach (string item in pth.Reverse()) {
+        //        if (i < 4)
+        //        {
+        //            newPth = item + "/" + newPth;
+        //        }
+        //        i += 1;
+        //    }
 
-            string p = "~/" + newPth.Substring(0,newPth.Length-1);
-            return p;
-        }
+        //    string p = "~/" + newPth.Substring(0,newPth.Length-1);
+        //    return p;
+        //}
 
     }
 }

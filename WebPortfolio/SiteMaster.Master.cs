@@ -22,7 +22,8 @@ namespace WebPortfolio
                 DataRow dr = dbDs.Tables[0].Rows[0];
                 ImgPic.ImageUrl = "~/images/" + dr["UserPicture"];
                 LblName.Text = dr["UserName"].ToString();
-                LblContact.Text = dr["UserContact"].ToString();
+               // LblContact.Text = dr["UserContact"].ToString();
+               // LblAddr.Text = dr["UserAddr"].ToString();
             }
 
         }

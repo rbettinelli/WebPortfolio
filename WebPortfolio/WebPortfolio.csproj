@@ -77,11 +77,11 @@
     <Content Include="images\apppics\3_main.jpg" />
     <Content Include="images\apppics\4_main.jpg" />
     <Content Include="images\apppics\5\5_main.jpg" />
-    <Content Include="images\apppics\5\Screenshot_20220712-012301_Expo Go.jpg" />
-    <Content Include="images\apppics\5\Screenshot_20220712-012312_Expo Go.jpg" />
-    <Content Include="images\apppics\5\Screenshot_20220712-012317_Expo Go.jpg" />
-    <Content Include="images\apppics\5\Screenshot_20220712-012325_Expo Go.jpg" />
-    <Content Include="images\apppics\5\Screenshot_20220712-012333_Expo Go.jpg" />
+    <Content Include="images\apppics\5\Landing.jpg" />
+    <Content Include="images\apppics\5\Login.jpg" />
+    <Content Include="images\apppics\5\Logout.jpg" />
+    <Content Include="images\apppics\5\Search.jpg" />
+    <Content Include="images\apppics\5\Select.jpg" />
     <Content Include="images\apppics\5_main.jpg" />
     <Content Include="images\apppics\6_main.jpg" />
     <Content Include="images\RB.JPG" />
