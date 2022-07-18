@@ -72,18 +72,42 @@
     <Content Include="css\mainStyle.css" />
     <Content Include="education.aspx" />
     <Content Include="employment.aspx" />
+    <Content Include="images\apppics\1\1_main.jpg" />
+    <Content Include="images\apppics\1\Apps.jpg" />
+    <Content Include="images\apppics\1\Master.jpg" />
+    <Content Include="images\apppics\1\Projects.jpg" />
     <Content Include="images\apppics\1_main.jpg" />
+    <Content Include="images\apppics\2\2_main.jpg" />
     <Content Include="images\apppics\2_main.jpg" />
+    <Content Include="images\apppics\3\3_main.jpg" />
+    <Content Include="images\apppics\3\CB_Game.png" />
+    <Content Include="images\apppics\3\CB_Menu.png" />
     <Content Include="images\apppics\3_main.jpg" />
+    <Content Include="images\apppics\4\4_main.jpg" />
+    <Content Include="images\apppics\4\Caller.jpg" />
+    <Content Include="images\apppics\4\Check.jpg" />
+    <Content Include="images\apppics\4\Onstart.jpg" />
     <Content Include="images\apppics\4_main.jpg" />
     <Content Include="images\apppics\5\5_main.jpg" />
     <Content Include="images\apppics\5\Landing.jpg" />
     <Content Include="images\apppics\5\Login.jpg" />
     <Content Include="images\apppics\5\Logout.jpg" />
+    <Content Include="images\apppics\5\road.gif" />
     <Content Include="images\apppics\5\Search.jpg" />
     <Content Include="images\apppics\5\Select.jpg" />
     <Content Include="images\apppics\5_main.jpg" />
+    <Content Include="images\apppics\6\6_main.jpg" />
+    <Content Include="images\apppics\6\gui.jpg" />
+    <Content Include="images\apppics\6\index.jpg" />
+    <Content Include="images\apppics\6\utils.jpg" />
     <Content Include="images\apppics\6_main.jpg" />
+    <Content Include="images\apppics\7\7_main.jpg" />
+    <Content Include="images\apppics\7\Login.png" />
+    <Content Include="images\apppics\7\Purch.jpg" />
+    <Content Include="images\apppics\7\Reg.png" />
+    <Content Include="images\apppics\7\User.jpg" />
+    <Content Include="images\apppics\7_main.jpg" />
+    <Content Include="images\Film.jpg" />
     <Content Include="images\RB.JPG" />
     <Content Include="images\V20-JJ.png" />
     <Content Include="index.aspx" />
@@ -169,13 +193,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="images\apppics\1\" />
-    <Folder Include="images\apppics\2\" />
-    <Folder Include="images\apppics\3\" />
-    <Folder Include="images\apppics\4\" />
-    <Folder Include="images\apppics\6\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

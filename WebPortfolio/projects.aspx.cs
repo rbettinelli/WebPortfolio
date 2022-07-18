@@ -40,40 +40,22 @@ namespace WebPortfolio
 
         }
 
-        //protected void Data_ItemDataBound(object sender, RepeaterItemEventArgs e)
-        // {
-        //    //Bind the inner repeater
-        //    if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
-        //    {
-        //        //Get the repeater
-        //        Repeater repeater = e.Item.FindControl("Repeater2") as Repeater;
 
-        //        //Get the schedule date from the DataItem 
-        //        string idx = Request.QueryString["id"];
+        protected void Rptr_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        {
+            if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+            {
+                Image i = e.Item.FindControl("Image1") as Image;
+                Panel p = e.Item.FindControl("Panel1") as Panel;
+                p.Visible = false;
+                i.Visible = true;
+                if (String.IsNullOrEmpty(i.ImageUrl)) {
+                    i.Visible = false;
+                    p.Visible = true;
+                }
 
-               
-
-        //    }
-        //}
-
-        //public String FileSplit(object strX)
-        //{
-        //    string str = (string)strX;
-        //    char c = '\\';
-        //    string[] pth = str.Split(c);
-        //    string newPth = "";
-        //    int i = 0;
-        //    foreach (string item in pth.Reverse()) {
-        //        if (i < 4)
-        //        {
-        //            newPth = item + "/" + newPth;
-        //        }
-        //        i += 1;
-        //    }
-
-        //    string p = "~/" + newPth.Substring(0,newPth.Length-1);
-        //    return p;
-        //}
+            }
+        }
 
     }
 }
