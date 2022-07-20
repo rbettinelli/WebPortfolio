@@ -96,6 +96,15 @@ namespace WebPortfolio
         protected global::System.Web.UI.WebControls.LinkButton Lnk4;
 
         /// <summary>
+        /// Lnk6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton Lnk6;
+
+        /// <summary>
         /// Lnk5 control.
         /// </summary>
         /// <remarks>

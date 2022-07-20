@@ -37,6 +37,7 @@ namespace WebPortfolio
             Lnk3.CssClass = "nav-link";
             Lnk4.CssClass = "nav-link";
             Lnk5.CssClass = "nav-link";
+            Lnk6.CssClass = "nav-link";
 
             switch (lnkX.ID)
             {
@@ -59,6 +60,10 @@ namespace WebPortfolio
                 case "Lnk5":
                     Lnk5.CssClass = "nav-link active";
                     Response.Redirect("contact.aspx");
+                    break;
+                case "Lnk6":
+                    Lnk6.CssClass = "nav-link active";
+                    Response.Redirect("about.aspx");
                     break;
                 default:
                     Lnk1.CssClass = "nav-link active";

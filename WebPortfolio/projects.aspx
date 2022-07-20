@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMaster.Master" AutoEventWireup="true" CodeBehind="projects.aspx.cs" Inherits="WebPortfolio.Projects" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
-
     <asp:Repeater ID="Repeater1" runat="server">
         <ItemTemplate>
             <div class="card">
@@ -33,7 +32,7 @@
                                     <td><%# DataBinder.Eval(Container.DataItem, "APPPlatform") %></td>
                                 </tr>
                                 <tr>
-                                    <td>Desc</td>
+                                    <td>About / Process</td>
                                     <td><%# DataBinder.Eval(Container.DataItem, "APPDesc") %></td>
                                 </tr>
                                 <tr>
@@ -51,15 +50,18 @@
     <div class="row">
         <asp:Repeater ID="Repeater2" runat="server" OnItemDataBound="Rptr_ItemDataBound">
             <ItemTemplate>
-
                 <div class="col-12 col-md-4 col-lg-3 col-xl-2" style="padding: 5px 5px;">
                     <div class="card mx-auto h-100">
                         <div class="card-body" style="text-align: center;">
-                            
+
                             <asp:Image ID="Image1" runat="server" ImageUrl='<%# DataBinder.Eval(Container.DataItem, "imagefile") %>' CssClass="img-fluid rounded" />
-                            <asp:Panel ID="Panel1" runat="server" ><br /><br /><br />
+                            <asp:Panel ID="Panel1" runat="server">
+                                <br />
+                                <br />
+                                <br />
                                 <a href='<%# DataBinder.Eval(Container.DataItem, "Link") %>' target="_blank" class="btn btn-warning">
-                                    <img src="images/Film.jpg" class="img-fluid rounded" /><br /><br />
+                                    <img src="images/Film.jpg" class="img-fluid rounded" /><br />
+                                    <br />
                                     Video!</a>
                             </asp:Panel>
                         </div>
@@ -71,8 +73,5 @@
 
             </ItemTemplate>
         </asp:Repeater>
-
     </div>
-    <br />
-
 </asp:Content>

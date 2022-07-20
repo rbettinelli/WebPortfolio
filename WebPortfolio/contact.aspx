@@ -20,32 +20,32 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                                    <label for="floatingInput">Email address</label>
+                                    <asp:TextBox ID="TxtEmail" runat="server" CssClass="form-control" placeholder="name@example.com"></asp:TextBox>
+                                    <label for="TxtEmail">Email address</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput1" placeholder="Your Name" />
-                                    <label for="floatingInput1">Your Name</label>
+                                    <asp:TextBox ID="TxtName" runat="server" CssClass="form-control" placeholder="Your Name"></asp:TextBox>
+                                    <label for="TxtName">Your Name</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput2" placeholder="Subject" />
-                                    <label for="floatingInput2">Subject</label>
+                                    <asp:TextBox ID="TxtSubject" runat="server" CssClass="form-control" placeholder="Subject"></asp:TextBox>
+                                    <label for="TxtSubject">Subject</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <div class="form-floating mb-3">
-                                    <textarea class="form-control" placeholder="Detail" id="floatingTextarea"></textarea>
-                                    <label for="floatingTextarea">Detail</label>
+                                    <asp:TextBox ID="TxtDetail" runat="server" CssClass="form-control" placeholder="Detail"></asp:TextBox>
+                                    <label for="TxtDetail">Detail</label>
                                 </div>
                             </div>
                         </div>

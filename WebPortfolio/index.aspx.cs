@@ -26,17 +26,6 @@ namespace WebPortfolio
                DevImage.ImageUrl = "~/images/" + dr["UserPicture"];
                LblBio.Text = dr["UserBio"].ToString();
             }
-
-            //List<string> v1 = new List<string> { "ProfileID" };
-            //List<object> v2 = new List<object> { 1 };
-            //DataSet dbDs1 = Com_DB.Spx_Uni("spg_GetProfileLinks",v1,v2);
-            //if (dbDs1.Tables[0].Rows.Count > 0)
-            //{
-            //    Repeater1.DataSource = dbDs1;
-            //    Repeater1.DataBind();
-            //}
-                
-
         }
     }
 }

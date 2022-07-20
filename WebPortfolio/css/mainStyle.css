@@ -1,9 +1,28 @@
 ﻿body {
+    font-family: "Segoe Print", sans-serif
 }
 
+.LGR {
+    color: #D95627;
+    font-size: 120px;
+}
 
-#header {
-    height: 100px;
-    width: 100%;
-    background-color :blue;
+.pH {
+    background-color: #4527D9;
+}
+
+.turq {
+    background-color: #27D9D9;
+}
+
+.mal {
+    background-color: #27D930;
+}
+
+.atlantis {
+    background-color: #9ED927;
+}
+
+.flame {
+    background-color: #D95627;
 }
