@@ -30,6 +30,7 @@ namespace WebPortfolio
                     // MailClient.EnableSsl = true;
                     MailClient.Credentials = new System.Net.NetworkCredential("noreply@io-serv.com", "#noreply!");
                     MailClient.Send(emailMessage);
+                    Master.DisplayAjaxMessage("Email being sent from a <b>Local Dynamic IP eMail Server</b>. You may not get the Email. (But watch your inbox!)");
                 }
             }
         }

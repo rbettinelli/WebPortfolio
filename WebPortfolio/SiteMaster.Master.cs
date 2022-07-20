@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Web.UI.WebControls;
+using System.Web.UI;
 
 namespace WebPortfolio
 {
     public partial class SiteMaster : System.Web.UI.MasterPage
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack) {
@@ -22,10 +24,14 @@ namespace WebPortfolio
                 DataRow dr = dbDs.Tables[0].Rows[0];
                 ImgPic.ImageUrl = "~/images/" + dr["UserPicture"];
                 LblName.Text = dr["UserName"].ToString();
-               // LblContact.Text = dr["UserContact"].ToString();
-               // LblAddr.Text = dr["UserAddr"].ToString();
             }
 
+        }
+
+        public void DisplayAjaxMessage(String txt)
+        {
+            LblSystemNote.Text = txt;
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
         }
 
         protected void LnkX_Click(object sender, EventArgs e)
