@@ -1,10 +1,9 @@
 ﻿body {
-    font-family: "Segoe Print", sans-serif
+    font-family: "Segoe Print", sans-serif;
 }
 
 .LGR {
     color: #D95627;
-    font-size: 120px;
 }
 
 .pH {
@@ -25,4 +24,8 @@
 
 .flame {
     background-color: #D95627;
+}
+
+.snowing {
+    background-color: white;
 }
