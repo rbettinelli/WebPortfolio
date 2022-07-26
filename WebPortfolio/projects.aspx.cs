@@ -57,5 +57,18 @@ namespace WebPortfolio
             }
         }
 
+        protected void Rptr_ItemCommand(Object Sender, RepeaterCommandEventArgs e)
+        {
+            if (e.CommandName == "ShowPic")
+            {
+
+                Image img = (Image)e.Item.FindControl("Image1");
+                ImgFull.ImageUrl = img.ImageUrl;
+
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModalPic();", true);
+
+            }
+        }
+
     }
 }

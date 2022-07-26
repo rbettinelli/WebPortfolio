@@ -1,6 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMaster.Master" AutoEventWireup="true" CodeBehind="projects.aspx.cs" Inherits="WebPortfolio.Projects" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
+    <script type="text/javascript">
+        function openModalPic() {
+            var myModal = new bootstrap.Modal('#PicModal');
+            myModal.show();
+        }
+    </script>
+
     <asp:Repeater ID="Repeater1" runat="server">
         <ItemTemplate>
             <div class="card">
@@ -48,13 +55,13 @@
         </ItemTemplate>
     </asp:Repeater>
     <div class="row">
-        <asp:Repeater ID="Repeater2" runat="server" OnItemDataBound="Rptr_ItemDataBound">
+        <asp:Repeater ID="Repeater2" runat="server" OnItemDataBound="Rptr_ItemDataBound" OnItemCommand="Rptr_ItemCommand">
             <ItemTemplate>
                 <div class="col-12 col-md-4 col-lg-3 col-xl-2" style="padding: 5px 5px;">
                     <div class="card mx-auto h-100">
                         <div class="card-body" style="text-align: center;">
 
-                            <asp:Image ID="Image1" runat="server" ImageUrl='<%# DataBinder.Eval(Container.DataItem, "imagefile") %>' CssClass="img-fluid rounded" />
+                            <asp:LinkButton ID="LnkBX" runat="server" CommandName="ShowPic"><asp:Image ID="Image1" runat="server" ImageUrl='<%# DataBinder.Eval(Container.DataItem, "imagefile") %>' CssClass="img-fluid rounded" /></asp:LinkButton>
                             <asp:Panel ID="Panel1" runat="server">
                                 <br />
                                 <br />
@@ -74,4 +81,21 @@
             </ItemTemplate>
         </asp:Repeater>
     </div>
+
+    <div class="modal fade" id="PicModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <asp:Label ID="LblPic" runat="server"></asp:Label></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <asp:Image ID="ImgFull" runat="server" CssClass="img-fluid rounded" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </asp:Content>
